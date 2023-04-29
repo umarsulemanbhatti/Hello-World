@@ -20,5 +20,5 @@ sum_total_broc = round(broccoli_price*float(y),2) # round number to 2 decimal po
 
 print(f"Leek is {leek_price} euro per kilo.")
 print(sum_total)
-print(sum_total_broc)
+print(f"1.6kg broccoli costs {sum_total_broc}e")
 
