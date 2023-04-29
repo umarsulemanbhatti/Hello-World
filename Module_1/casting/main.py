@@ -11,7 +11,7 @@ sum_total = leek_price*int_x
 
 broccoli_price = 2.34
 order_broccoli = 'broccoli 1.6'
-y = order_broccoli[order_broccoli.find('1.6'):12]  # y is number extracted from string
+y = order_broccoli[order_broccoli.find('1.6'):(order_broccoli.find('6'))+1]  # y is number extracted from string
 int_y = float(y)
 """ This time we do not use int function to convert the string to number,
 becasue we will get a decimal number and this cant be an integer"""
