@@ -4,14 +4,19 @@ __human_name__ = 'functions'
 
 # Add your code after this line
 def greet(name):
-    greet_name="Hello, "+name
-    return greet_name
+    func_name="Hello, "+name+"!"
+    return func_name
 
-def sum(a, b, c):
-    fun_sum=a+b+c
-    return fun_sum
+def add(a,b,c):
+    return a+b+c
 
-name="Umar"
-print(greet(name))
-print(sum(2, 3, 4))
+def positive(num):
+    return num>0
 
+def negative(num):
+    return num<0
+
+print(greet("Umar"))
+print(add(2,3,4))
+print(positive(30))
+print(negative(-4))
