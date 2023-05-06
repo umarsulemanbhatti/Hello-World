@@ -16,5 +16,14 @@ def won_golden_globe(film_name):
     else:
         return False
     
+albumn_list = ['I Passed for White', 'Fahrenheit', 'The Seventh One', 'Old Is New', "Because They're Young", 'The Secret Ways']
 
+def remove_toto_albums(album_list):
+    toto_album = ['Fahrenheit', 'The Seventh One', 'Old Is New']
+    for x in toto_album:
+        if x in album_list:
+            album_list.remove(x)
+    return album_list
+
+print(remove_toto_albums(albumn_list))
 
