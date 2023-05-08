@@ -21,4 +21,5 @@ if __name__ == "__main__":
 len_country_names = [len(country) for country in countries]
 for country in countries:
     if len(country) == min(len_country_names):
-        print(list(country))
+        print(country)
+
