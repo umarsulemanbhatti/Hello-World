@@ -3,9 +3,10 @@ __winc_id__ = '25596924dffe436da9034d43d0af6791'
 __human_name__ = 'conditions'
 
 # Add your code after this line
+
 def farm_action(weather, time_of_day, cow_milking_status, location_of_the_cows, season, slurry_tank, grass_status):
     
-    if  location_of_the_cows == "pasture" and (weather == "rain" or time_of_day == "night"):
+    if  location_of_the_cows == "pasture" and (weather == "rainy" or time_of_day == "night"):
         return "take cows to cowshed"
     
     elif location_of_the_cows == "cowshed" and cow_milking_status == True:
@@ -22,4 +23,5 @@ def farm_action(weather, time_of_day, cow_milking_status, location_of_the_cows, 
 
     else:
         return "wait"
-print(farm_action('rain', 'night', False, 'cowshed', 'winter', False, True))
+    
+print(farm_action('rainy', 'night', False, 'cowshed', 'winter', False, True))
