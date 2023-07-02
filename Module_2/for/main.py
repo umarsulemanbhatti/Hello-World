@@ -24,7 +24,7 @@ def most_vowels(countries):
     countries,
     key=lambda country: sum([country.count(vowel) for vowel in vowels]),
     reverse=True)
-  formatted_countries = [country.title().replace(" And ", " and ").replace("The", "the").replace("Of", "of") for country in sorted_countries]
+  formatted_countries = [country.title().replace("And", "and").replace("The", "the").replace("Of", "of") for country in sorted_countries]
   return formatted_countries
   
 def alphabet_set(countries):
@@ -46,7 +46,7 @@ if __name__ == "__main__":
     countries = get_countries()
      
     """ Write the calls to your functions here. """
-    print(shortest_names(countries))
+    #print(shortest_names(countries))
     print(most_vowels(countries)[:3])
-    print(alphabet_set(countries))
+    #print(alphabet_set(countries))
 
