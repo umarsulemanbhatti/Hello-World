@@ -25,7 +25,7 @@ def most_vowels(countries):
     key=lambda country: sum([country.count(vowel) for vowel in vowels]),
     reverse=True)
   formatted_countries = [country.title().replace("And", "and").replace("The", "the").replace("Of", "of") for country in sorted_countries]
-  return formatted_countries
+  return (formatted_countries[:3])
   
 def alphabet_set(countries):
   result = []
